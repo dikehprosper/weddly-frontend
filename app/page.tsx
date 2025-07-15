@@ -10,7 +10,7 @@ import {
   getCoordinators,
 } from "@/components/utils/services/coordinatorService";
 
-export default function ClientHome() {
+export default function Page() {
   // Access current theme and function to toggle between light/dark mode
   const {theme, toggleTheme} = useTheme();
 

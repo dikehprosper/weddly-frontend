@@ -5,15 +5,15 @@ Weddly is a minimal wedding coordinator marketplace MVP that allows couples to b
 
 ## Tech Stack
 ### Frontend:
-#### Next.js (TypeScript)
-#### Tailwind CSS
-#### React Hooks (useEffect, useState)
-#### API Integration via Fetch
+Next.js (TypeScript)
+Tailwind CSS
+React Hooks (useEffect, useState)
+API Integration via Fetch
 
 ### Backend:
-#### Node.js + Express
-#### MongoDB + Mongoose
-#### REST API
+Node.js + Express
+MongoDB + Mongoose
+REST API
 
 
 ### Live Demo

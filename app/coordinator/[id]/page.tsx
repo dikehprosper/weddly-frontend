@@ -14,8 +14,14 @@ import SingleCoordinatorCardForm from "@/components/cards/SingleCoordinatorCardF
 import CancelBookingModal from "@/components/modals/CancelBookingModal";
 import {createBooking} from "@/components/utils/services/bookingService";
 import ResponseBookingModal from "@/components/modals/ResponseBookingModal";
+interface PageProps {
+  params: {
+    id: string;
+  };
+}
 
-export default function ClientHome({params}: {params: {id: string}}) {
+export default function Page({params}: PageProps) {
+  const {id} = params;
   // Access theme and toggle function from custom hook
   const {theme, toggleTheme} = useTheme();
 
@@ -92,7 +98,7 @@ export default function ClientHome({params}: {params: {id: string}}) {
       fetchFromServer();
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [params.id]);
+  }, [id]);
 
   // Fetch coordinator details from backend by id
   const fetchFromServer = async () => {
