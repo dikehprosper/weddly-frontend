@@ -14,13 +14,8 @@ import SingleCoordinatorCardForm from "@/components/cards/SingleCoordinatorCardF
 import CancelBookingModal from "@/components/modals/CancelBookingModal";
 import {createBooking} from "@/components/utils/services/bookingService";
 import ResponseBookingModal from "@/components/modals/ResponseBookingModal";
-interface PageProps {
-  params: {
-    id: string;
-  };
-}
 
-export default function Page({params}: PageProps) {
+export default function Page({params}: {params: {id: string}}) {
   const {id} = params;
   // Access theme and toggle function from custom hook
   const {theme, toggleTheme} = useTheme();
