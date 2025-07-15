@@ -20,7 +20,7 @@ REST API
 
 |  App                               | Link                                         |
 | ---------------------------------- | -------------------------------------------- |
-|  **Frontend (Next.js)**            | [https://weddly-frontend.vercel.app](#)      |
+|  **Frontend (Next.js)**            | [https://weddlyfrontend.netlify.app](#)      |
 |  **Backend (Express + MongoDB)**   | [https://weddly-backend.onrender.com](#) |
 
 
