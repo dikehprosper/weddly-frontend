@@ -11,7 +11,7 @@ import {Coordinator} from "@/components/utils/services/coordinatorService";
  * name, email, date, and guest number. Handles form submission and cancellation.
  */
 
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 
 // Component Props definition
 const SingleCoordinatorCardForm: React.FC<{
@@ -40,6 +40,11 @@ const SingleCoordinatorCardForm: React.FC<{
 
   // Coordinator's unavailable booking dates
   const unavailableDates = coordinator.unavailableDates || [];
+
+  // Makes sure the page starts at the top onload
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   /**
    * Form Validation Logic
@@ -210,7 +215,7 @@ const SingleCoordinatorCardForm: React.FC<{
             }}
             className='cursor-pointer w-1/2 py-2 rounded-md bg-purple-600 text-white hover:bg-purple-700 transition'
           >
-            {isLoading ? "Proceed..." : "Proceed"}
+            {isLoading ? "Proceeding..." : "Proceed"}
           </button>
         </div>
       </form>
