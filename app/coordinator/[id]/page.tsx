@@ -15,7 +15,8 @@ import CancelBookingModal from "@/components/modals/CancelBookingModal";
 import {createBooking} from "@/components/utils/services/bookingService";
 import ResponseBookingModal from "@/components/modals/ResponseBookingModal";
 
-export default function Page({params}: {params: {id: string}}) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default function Page({params}: {params: any}) {
   const {id} = params;
   // Access theme and toggle function from custom hook
   const {theme, toggleTheme} = useTheme();

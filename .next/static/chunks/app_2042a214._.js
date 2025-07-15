@@ -1535,7 +1535,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>ClientHome)
+    "default": (()=>Page)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$shared$2f$Navbar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/shared/Navbar.tsx [app-client] (ecmascript)");
@@ -1563,8 +1563,9 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-function ClientHome({ params }) {
+function Page({ params }) {
     _s();
+    const { id } = params;
     // Access theme and toggle function from custom hook
     const { theme, toggleTheme } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$utils$2f$hooks$2f$useTheme$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"])();
     // Coordinator data state, initially null before loading
@@ -1616,7 +1617,7 @@ function ClientHome({ params }) {
     };
     // Effect to load coordinator data on mount or id change
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "ClientHome.useEffect": ()=>{
+        "Page.useEffect": ()=>{
             const coordinatorData = searchParams.get("coordinator");
             if (coordinatorData) {
                 // Attempt to parse coordinator data passed via URL param for faster render
@@ -1634,8 +1635,8 @@ function ClientHome({ params }) {
             }
         // eslint-disable-next-line react-hooks/exhaustive-deps
         }
-    }["ClientHome.useEffect"], [
-        params.id
+    }["Page.useEffect"], [
+        id
     ]);
     // Fetch coordinator details from backend by id
     const fetchFromServer = async ()=>{
@@ -1652,7 +1653,7 @@ function ClientHome({ params }) {
     };
     // Scroll to booking form on mobile devices when it appears
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "ClientHome.useEffect": ()=>{
+        "Page.useEffect": ()=>{
             if (showBookingForm && window.innerWidth < 768) {
                 bookingRef.current?.scrollIntoView({
                     behavior: "smooth",
@@ -1660,7 +1661,7 @@ function ClientHome({ params }) {
                 });
             }
         }
-    }["ClientHome.useEffect"], [
+    }["Page.useEffect"], [
         showBookingForm
     ]);
     // Handles form submission for booking a coordinator
@@ -1696,7 +1697,7 @@ function ClientHome({ params }) {
         children: "Loading..."
     }, void 0, false, {
         fileName: "[project]/app/coordinator/[id]/page.tsx",
-        lineNumber: 155,
+        lineNumber: 157,
         columnNumber: 23
     }, this);
     if (error) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1704,7 +1705,7 @@ function ClientHome({ params }) {
         children: error
     }, void 0, false, {
         fileName: "[project]/app/coordinator/[id]/page.tsx",
-        lineNumber: 156,
+        lineNumber: 158,
         columnNumber: 21
     }, this);
     if (!coordinator) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1712,7 +1713,7 @@ function ClientHome({ params }) {
         children: "Coordinator not found."
     }, void 0, false, {
         fileName: "[project]/app/coordinator/[id]/page.tsx",
-        lineNumber: 158,
+        lineNumber: 160,
         columnNumber: 12
     }, this);
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1724,7 +1725,7 @@ function ClientHome({ params }) {
                 onDismiss: dismissCancel
             }, void 0, false, {
                 fileName: "[project]/app/coordinator/[id]/page.tsx",
-                lineNumber: 163,
+                lineNumber: 165,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$modals$2f$ResponseBookingModal$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1733,7 +1734,7 @@ function ClientHome({ params }) {
                 onErrorConfirm: onErrorConfirm
             }, void 0, false, {
                 fileName: "[project]/app/coordinator/[id]/page.tsx",
-                lineNumber: 168,
+                lineNumber: 170,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$shared$2f$Navbar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1741,7 +1742,7 @@ function ClientHome({ params }) {
                 toggleTheme: toggleTheme
             }, void 0, false, {
                 fileName: "[project]/app/coordinator/[id]/page.tsx",
-                lineNumber: 175,
+                lineNumber: 177,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1753,7 +1754,7 @@ function ClientHome({ params }) {
                         children: "Coordinator Details"
                     }, void 0, false, {
                         fileName: "[project]/app/coordinator/[id]/page.tsx",
-                        lineNumber: 179,
+                        lineNumber: 181,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1764,7 +1765,7 @@ function ClientHome({ params }) {
                                 onBookNow: ()=>setShowBookingForm(true)
                             }, void 0, false, {
                                 fileName: "[project]/app/coordinator/[id]/page.tsx",
-                                lineNumber: 193,
+                                lineNumber: 195,
                                 columnNumber: 11
                             }, this),
                             showBookingForm && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1776,47 +1777,47 @@ function ClientHome({ params }) {
                                     isLoading: isLoading
                                 }, void 0, false, {
                                     fileName: "[project]/app/coordinator/[id]/page.tsx",
-                                    lineNumber: 201,
+                                    lineNumber: 203,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/coordinator/[id]/page.tsx",
-                                lineNumber: 200,
+                                lineNumber: 202,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/coordinator/[id]/page.tsx",
-                        lineNumber: 187,
+                        lineNumber: 189,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/coordinator/[id]/page.tsx",
-                lineNumber: 177,
+                lineNumber: 179,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$shared$2f$Footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "[project]/app/coordinator/[id]/page.tsx",
-                lineNumber: 213,
+                lineNumber: 215,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/coordinator/[id]/page.tsx",
-        lineNumber: 161,
+        lineNumber: 163,
         columnNumber: 5
     }, this);
 }
-_s(ClientHome, "FQtGyTP1YzjyEgvVDJ+Hvox5ILk=", false, function() {
+_s(Page, "FQtGyTP1YzjyEgvVDJ+Hvox5ILk=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$utils$2f$hooks$2f$useTheme$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"],
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useSearchParams"]
     ];
 });
-_c = ClientHome;
+_c = Page;
 var _c;
-__turbopack_context__.k.register(_c, "ClientHome");
+__turbopack_context__.k.register(_c, "Page");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }

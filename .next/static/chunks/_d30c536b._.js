@@ -711,7 +711,7 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>ClientHome)
+    "default": (()=>Page)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$shared$2f$Navbar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/shared/Navbar.tsx [app-client] (ecmascript)");
@@ -729,7 +729,7 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
-function ClientHome() {
+function Page() {
     _s();
     // Access current theme and function to toggle between light/dark mode
     const { theme, toggleTheme } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$utils$2f$hooks$2f$useTheme$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"])();
@@ -742,9 +742,9 @@ function ClientHome() {
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
     // Fetch coordinators once on component mount
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "ClientHome.useEffect": ()=>{
+        "Page.useEffect": ()=>{
             const fetchCoordinators = {
-                "ClientHome.useEffect.fetchCoordinators": async ()=>{
+                "Page.useEffect.fetchCoordinators": async ()=>{
                     setLoading(true); // Show loading indicator
                     setError(null); // Clear any previous errors
                     try {
@@ -757,10 +757,10 @@ function ClientHome() {
                         setLoading(false); // Hide loading indicator regardless of outcome
                     }
                 }
-            }["ClientHome.useEffect.fetchCoordinators"];
+            }["Page.useEffect.fetchCoordinators"];
             fetchCoordinators();
         }
-    }["ClientHome.useEffect"], []);
+    }["Page.useEffect"], []);
     // Filter coordinators by name or location matching the search term (case-insensitive)
     const filteredCoordinators = coordinators.filter((c)=>c.name.toLowerCase().includes(searchTerm.toLowerCase()) || c.location && c.location.toLowerCase().includes(searchTerm.toLowerCase()));
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -858,14 +858,14 @@ function ClientHome() {
         columnNumber: 5
     }, this);
 }
-_s(ClientHome, "98fnS/usgwmWVQ0+WmyBf1ZzJvw=", false, function() {
+_s(Page, "98fnS/usgwmWVQ0+WmyBf1ZzJvw=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$utils$2f$hooks$2f$useTheme$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"]
     ];
 });
-_c = ClientHome;
+_c = Page;
 var _c;
-__turbopack_context__.k.register(_c, "ClientHome");
+__turbopack_context__.k.register(_c, "Page");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
