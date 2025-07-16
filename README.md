@@ -20,9 +20,9 @@ REST API
 
 |  App                               | Link                                         |
 | ---------------------------------- | -------------------------------------------- |
-|  **Frontend (Next.js)**            | [https://weddlyfrontend.netlify.app](#)      |
-|  **Backend (Express + MongoDB)**   | [https://weddly-backend.onrender.com](#) |
-
+|  **Frontend (Next.js)**            | https://weddlyfrontend.netlify.app           |
+|  **Backend (Express + MongoDB)**   | https://weddly-backend.onrender.com          |
+ 
 
 ## Deployment
 Frontend: Netlify
