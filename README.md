@@ -30,7 +30,7 @@ Backend: Render
 Database: MongoDB
 
 
-##E Setup Instructions
+### Setup Instructions
 Clone the Repository
 ```bash
 git clone https://github.com/dikehprosper/weddly-frontend
