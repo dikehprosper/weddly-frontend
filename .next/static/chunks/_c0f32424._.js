@@ -558,992 +558,148 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
-"[project]/app/components/utils/starRating.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"[project]/app/page.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "default": (()=>Page)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-"use client";
-;
-// StarRating component to visually display star ratings (including half-stars)
-const StarRating = ({ rating })=>{
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "flex items-center space-x-1",
-        children: [
-            ...Array(5)
-        ].map((_, index)=>{
-            const starValue = index + 1;
-            // Determine if the star should be fully filled
-            const isFull = rating >= starValue;
-            // Determine if the star should be half-filled
-            const isHalf = rating >= starValue - 0.5 && rating < starValue;
-            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                xmlns: "http://www.w3.org/2000/svg",
-                fill: isFull ? "#FFD700" : isHalf ? "url(#halfGradient)" : "#d1d5db",
-                viewBox: "0 0 24 24",
-                strokeWidth: "1.5",
-                stroke: "currentColor",
-                className: "w-5 h-5",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("linearGradient", {
-                            id: "halfGradient",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
-                                    offset: "50%",
-                                    stopColor: "#FFD700"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/components/utils/starRating.tsx",
-                                    lineNumber: 39,
-                                    columnNumber: 17
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("stop", {
-                                    offset: "50%",
-                                    stopColor: "#d1d5db"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/components/utils/starRating.tsx",
-                                    lineNumber: 40,
-                                    columnNumber: 17
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/app/components/utils/starRating.tsx",
-                            lineNumber: 38,
-                            columnNumber: 15
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/app/components/utils/starRating.tsx",
-                        lineNumber: 37,
-                        columnNumber: 13
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                        strokeLinecap: "round",
-                        strokeLinejoin: "round",
-                        d: "M12 17.27L18.18 21 16.54 13.97  22 9.24l-7.19-.62L12 2 9.19 8.62  2 9.24l5.46 4.73L5.82 21z"
-                    }, void 0, false, {
-                        fileName: "[project]/app/components/utils/starRating.tsx",
-                        lineNumber: 45,
-                        columnNumber: 13
-                    }, this)
-                ]
-            }, index, true, {
-                fileName: "[project]/app/components/utils/starRating.tsx",
-                lineNumber: 25,
-                columnNumber: 11
-            }, this);
-        })
-    }, void 0, false, {
-        fileName: "[project]/app/components/utils/starRating.tsx",
-        lineNumber: 13,
-        columnNumber: 5
-    }, this);
-};
-_c = StarRating;
-const __TURBOPACK__default__export__ = StarRating;
-var _c;
-__turbopack_context__.k.register(_c, "StarRating");
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
-}
-}}),
-"[project]/app/components/cards/SingleCoordinatorCard.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
-{
-/**
- * Coordinator Type Definition
- * Describes the properties associated with each coordinator.
- */ __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$utils$2f$starRating$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/utils/starRating.tsx [app-client] (ecmascript)");
-;
-;
-/**
- * SingleCoordinatorCard Component
- * @description Displays a single coordinator's key details, including profile photo,
- * name, location, price, and more, along with a Book Now button.
- *
- * @param coordinator - A single coordinator object with key display data
- * @param onBookNow - Function called when Book Now button is clicked
- */ const SingleCoordinatorCard = ({ coordinator, onBookNow })=>{
-    return(// Main card container with light/dark mode and responsiveness
-    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "bg-white/90 dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 flex flex-col max-w-md mx-auto",
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                src: coordinator.profilePhoto,
-                alt: coordinator.name,
-                className: "w-full h-48 object-cover"
-            }, void 0, false, {
-                fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                lineNumber: 24,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "p-5 flex-1 flex flex-col justify-between",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                className: "justify-center text-xl font-semibold mb-1 text-gray-700 dark:text-gray-300 flex",
-                                children: coordinator.name
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                lineNumber: 34,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex justify-center items-center w-full py-3",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-gray-900 dark:text-white text-center",
-                                    children: coordinator.bio
-                                }, void 0, false, {
-                                    fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                    lineNumber: 40,
-                                    columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                lineNumber: 39,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex justify-between w-full py-1",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "font-semibold text-gray-700 dark:text-gray-300",
-                                        children: "Location:"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                        lineNumber: 47,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-gray-900 dark:text-white",
-                                        children: coordinator.location
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                        lineNumber: 50,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                lineNumber: 46,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex justify-between w-full py-1",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "font-semibold text-gray-700 dark:text-gray-300",
-                                        children: "Rating:"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                        lineNumber: 57,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center space-x-2",
-                                        children: [
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$utils$2f$starRating$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                rating: coordinator.rating
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                                lineNumber: 62,
-                                                columnNumber: 15
-                                            }, this),
-                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-gray-900 dark:text-white",
-                                                children: coordinator.rating
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                                lineNumber: 63,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                        lineNumber: 60,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                lineNumber: 56,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex justify-between w-full py-1",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "font-semibold text-gray-700 dark:text-gray-300",
-                                        children: "Reviews:"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                        lineNumber: 71,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center space-x-2",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-gray-900 dark:text-white",
-                                            children: coordinator.reviews
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                            lineNumber: 75,
-                                            columnNumber: 15
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                        lineNumber: 74,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                lineNumber: 70,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex justify-between w-full py-1",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "font-semibold text-gray-700 dark:text-gray-300",
-                                        children: "Experience:"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                        lineNumber: 83,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center space-x-2",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-gray-900 dark:text-white",
-                                            children: coordinator.experience
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                            lineNumber: 87,
-                                            columnNumber: 15
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                        lineNumber: 86,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                lineNumber: 82,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex justify-between w-full py-1",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "font-semibold text-gray-700 dark:text-gray-300",
-                                        children: "Specialty:"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                        lineNumber: 95,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center space-x-2",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-gray-900 dark:text-white",
-                                            children: coordinator.specialty
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                            lineNumber: 99,
-                                            columnNumber: 15
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                        lineNumber: 98,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                lineNumber: 94,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex justify-between w-full py-1",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "font-semibold text-gray-700 dark:text-gray-300",
-                                        children: "Languages:"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                        lineNumber: 107,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex items-center space-x-2",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "text-gray-900 dark:text-white",
-                                            children: Array.isArray(coordinator.languages) ? coordinator.languages.join(", ") : coordinator.languages
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                            lineNumber: 111,
-                                            columnNumber: 15
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                        lineNumber: 110,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                lineNumber: 106,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex justify-between w-full py-1 flex-wrap",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "font-semibold text-gray-700 dark:text-gray-300 mb-2",
-                                        children: "Unavailable Dates:"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                        lineNumber: 122,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "flex flex-wrap justify-end align-center gap-2 flex-1",
-                                        children: coordinator.unavailableDates.map((date, index)=>{
-                                            // Format dates to readable string like "Jul 15, 2025"
-                                            const formattedDate = new Date(date).toLocaleDateString("en-US", {
-                                                year: "numeric",
-                                                month: "short",
-                                                day: "numeric"
-                                            });
-                                            return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "bg-red-100 flex items-center justify-center text-red-700 dark:bg-red-800 dark:text-red-200 px-1 py-1 rounded-full text-[10px] font-medium leading-none h-fit",
-                                                children: formattedDate
-                                            }, index, false, {
-                                                fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                                lineNumber: 138,
-                                                columnNumber: 21
-                                            }, this);
-                                        })
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                        lineNumber: 125,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                lineNumber: 121,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "flex justify-between w-full py-1",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "font-semibold text-gray-700 dark:text-gray-300",
-                                        children: "Price:"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                        lineNumber: 152,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "text-gray-900 dark:text-white text-semi-bold",
-                                        children: [
-                                            "₦",
-                                            coordinator.price.toLocaleString()
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                        lineNumber: 155,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                                lineNumber: 151,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                        lineNumber: 32,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: onBookNow,
-                        className: "cursor-pointer mt-8 bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700 w-full",
-                        children: [
-                            "Book ",
-                            coordinator.name
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                        lineNumber: 162,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-                lineNumber: 31,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/app/components/cards/SingleCoordinatorCard.tsx",
-        lineNumber: 22,
-        columnNumber: 5
-    }, this));
-};
-_c = SingleCoordinatorCard;
-const __TURBOPACK__default__export__ = SingleCoordinatorCard;
-var _c;
-__turbopack_context__.k.register(_c, "SingleCoordinatorCard");
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
-}
-}}),
-"[project]/app/components/cards/SingleCoordinatorCardForm.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
-{
-/**
- * Coordinator Type Definition
- * Describes the properties associated with each coordinator.
- */ __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-/**
- * SingleCoordinatorCardForm Component
- *
- * Renders a booking form for a selected coordinator with validation logic for
- * name, email, date, and guest number. Handles form submission and cancellation.
- */ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$shared$2f$Navbar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/shared/Navbar.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$utils$2f$hooks$2f$useTheme$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/utils/hooks/useTheme.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$shared$2f$Footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/shared/Footer.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$utils$2f$services$2f$coordinatorService$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/app/components/utils/services/coordinatorService.tsx [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
+"use client";
 ;
-// Component Props definition
-const SingleCoordinatorCardForm = ({ coordinator, onCancel, onSubmit, isLoading })=>{
+;
+;
+;
+;
+function Page() {
     _s();
-    // Form input states
-    const [name, setName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    const [email, setEmail] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    const [date, setDate] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    const [guestNumber, setGuestNumber] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    // Error states for each input
-    const [emailError, setEmailError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    const [dateError, setDateError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    const [nameError, setNameError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    const [guestError, setGuestError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
-    // Coordinator's unavailable booking dates
-    const unavailableDates = coordinator.unavailableDates || [];
-    // Makes sure the page starts at the top onload
+    // Access current theme and function to toggle between light/dark mode
+    const { theme, toggleTheme } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$utils$2f$hooks$2f$useTheme$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"])();
+    // State to hold the list of coordinators fetched from API
+    const [coordinators, setCoordinators] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    // State for the search input value
+    const [searchTerm, setSearchTerm] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    // Loading and error states to manage UI feedback during API call
+    const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    // Fetch coordinators once on component mount
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
-        "SingleCoordinatorCardForm.useEffect": ()=>{
-            window.scrollTo(0, 0);
+        "Page.useEffect": ()=>{
+            const fetchCoordinators = {
+                "Page.useEffect.fetchCoordinators": async ()=>{
+                    setLoading(true); // Show loading indicator
+                    setError(null); // Clear any previous errors
+                    try {
+                        const data = await (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$utils$2f$services$2f$coordinatorService$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getCoordinators"])(); // API call
+                        setCoordinators(data); // Update state with fetched data
+                    } catch (err) {
+                        console.error("Error fetching coordinators:", err);
+                        setError("Failed to load coordinators."); // Show error message
+                    } finally{
+                        setLoading(false); // Hide loading indicator regardless of outcome
+                    }
+                }
+            }["Page.useEffect.fetchCoordinators"];
+            fetchCoordinators();
         }
-    }["SingleCoordinatorCardForm.useEffect"], []);
-    /**
-   * Form Validation Logic
-   * Checks if all form fields are properly filled out and valid.
-   * Shows appropriate error messages for each invalid input.
-   */ const validateForm = ()=>{
-        console.log("iiiiiiiiiiii"); // debug log
-        let isValid = true;
-        // Validate Name
-        if (!name.trim()) {
-            setNameError("Name is required.");
-            isValid = false;
-        } else if (name.trim().length < 2) {
-            setNameError("Please enter a valid name.");
-            isValid = false;
-        } else {
-            setNameError("");
-        }
-        // Validate Email
-        if (!/\S+@\S+\.\S+/.test(email)) {
-            setEmailError("Please enter a valid email address.");
-            isValid = false;
-        } else {
-            setEmailError("");
-        }
-        // Validate Date (should be a future date and not in unavailable dates)
-        const today = new Date();
-        today.setHours(0, 0, 0, 0); // normalize today's date
-        const selectedDate = new Date(date);
-        selectedDate.setHours(0, 0, 0, 0);
-        if (!date) {
-            setDateError("Please select a wedding date.");
-            isValid = false;
-        } else if (selectedDate <= today) {
-            setDateError("You cannot select today or a past date.");
-            isValid = false;
-        } else if (unavailableDates.includes(date)) {
-            setDateError(`Coordinator is unavailable on ${date}`);
-            isValid = false;
-        } else {
-            setDateError("");
-        }
-        // Validate Guest Number (must be a positive number)
-        const numericGuestNumber = Number(guestNumber);
-        if (!guestNumber.trim()) {
-            setGuestError("Guest number is required.");
-            isValid = false;
-        } else if (isNaN(numericGuestNumber) || numericGuestNumber <= 0) {
-            setGuestError("Please enter a valid guest number.");
-            isValid = false;
-        } else {
-            setGuestError("");
-        }
-        // Submit booking data if valid
-        if (isValid) {
-            const bookingData = {
-                name,
-                email,
-                date,
-                guestNumber: numericGuestNumber,
-                coordinatorId: coordinator._id
-            };
-            console.log(bookingData);
-            onSubmit(bookingData);
-        }
-    };
+    }["Page.useEffect"], []);
+    // Filter coordinators by name or location matching the search term (case-insensitive)
+    const filteredCoordinators = coordinators.filter((c)=>c.name.toLowerCase().includes(searchTerm.toLowerCase()) || c.location && c.location.toLowerCase().includes(searchTerm.toLowerCase()));
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "bg-white/90 dark:bg-gray-900 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition duration-300 flex flex-col max-w-md mx-auto p-6",
+        className: "min-h-screen bg-white dark:bg-gray-800 antialiased transition-colors duration-300",
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                className: "text-2xl font-semibold mb-4 dark:text-white text-gray-900 text-center",
-                children: [
-                    "Book ",
-                    coordinator.name
-                ]
-            }, void 0, true, {
-                fileName: "[project]/app/components/cards/SingleCoordinatorCardForm.tsx",
-                lineNumber: 126,
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$shared$2f$Navbar$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                theme: theme,
+                toggleTheme: toggleTheme
+            }, void 0, false, {
+                fileName: "[project]/app/page.tsx",
+                lineNumber: 57,
                 columnNumber: 7
             }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
-                className: "space-y-8 pt-10",
-                onSubmit: (e)=>{
-                    e.preventDefault();
-                    validateForm();
-                },
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: "py-22 px-6 max-w-7xl mx-auto ",
                 children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative",
-                        children: [
-                            nameError && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-red-500 text-sm absolute right-[0px] top-[-20px]",
-                                children: [
-                                    "* ",
-                                    nameError
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/components/cards/SingleCoordinatorCardForm.tsx",
-                                lineNumber: 139,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                type: "text",
-                                placeholder: "Your Name",
-                                value: name,
-                                onChange: (e)=>setName(e.target.value),
-                                className: "w-full p-3 rounded-md border border-gray-300 bg-transparent focus:border-purple-500 focus:outline-none focus:ring-1 focus:ring-purple-500 text-gray-900 dark:text-white"
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/cards/SingleCoordinatorCardForm.tsx",
-                                lineNumber: 143,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/components/cards/SingleCoordinatorCardForm.tsx",
-                        lineNumber: 137,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative",
-                        children: [
-                            emailError && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-red-500 text-sm absolute right-[0px] top-[-20px]",
-                                children: [
-                                    "* ",
-                                    emailError
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/components/cards/SingleCoordinatorCardForm.tsx",
-                                lineNumber: 154,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                type: "email",
-                                placeholder: "Your Email",
-                                value: email,
-                                onChange: (e)=>setEmail(e.target.value),
-                                className: "w-full p-3 rounded-md border border-gray-300 bg-transparent focus:border-purple-500 focus:outline-none focus:ring-1 focus:ring-purple-500 text-dark dark:text-white"
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/cards/SingleCoordinatorCardForm.tsx",
-                                lineNumber: 158,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/components/cards/SingleCoordinatorCardForm.tsx",
-                        lineNumber: 152,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative",
-                        children: [
-                            dateError && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-red-500 text-sm absolute right-[0px] top-[-20px]",
-                                children: [
-                                    "* ",
-                                    dateError
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/components/cards/SingleCoordinatorCardForm.tsx",
-                                lineNumber: 169,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                type: "date",
-                                value: date,
-                                onChange: (e)=>setDate(e.target.value),
-                                className: "w-full p-3 rounded-md border border-gray-300 focus:border-purple-500 focus:outline-none focus:ring-1 focus:ring-purple-500 text-dark dark:text-white"
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/cards/SingleCoordinatorCardForm.tsx",
-                                lineNumber: 173,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/components/cards/SingleCoordinatorCardForm.tsx",
-                        lineNumber: 167,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "relative",
-                        children: [
-                            guestError && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-red-500 text-sm absolute right-[0px] top-[-20px]",
-                                children: [
-                                    "* ",
-                                    guestError
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/components/cards/SingleCoordinatorCardForm.tsx",
-                                lineNumber: 183,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                type: "string",
-                                placeholder: "Guest Number",
-                                value: guestNumber,
-                                onChange: (e)=>setGuestNumber(e.target.value),
-                                className: "w-full p-3 rounded-md border border-gray-300 focus:border-purple-500 focus:outline-none focus:ring-1 focus:ring-purple-500 text-gray-900 dark:text-white"
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/cards/SingleCoordinatorCardForm.tsx",
-                                lineNumber: 187,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/components/cards/SingleCoordinatorCardForm.tsx",
-                        lineNumber: 181,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex w-full gap-4 mt-10",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                disabled: isLoading,
-                                type: "button",
-                                onClick: (e)=>{
-                                    e.preventDefault();
-                                    onCancel();
-                                },
-                                className: "w-1/2 py-2 rounded-md dark:text-white text-gray-700 border border-black dark:border-white hover:bg-gray-200 dark:hover:bg-gray-800 transition cursor-pointer",
-                                children: "Cancel"
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/cards/SingleCoordinatorCardForm.tsx",
-                                lineNumber: 197,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                disabled: isLoading,
-                                type: "submit",
-                                onClick: (e)=>{
-                                    e.preventDefault();
-                                    validateForm();
-                                },
-                                className: "cursor-pointer w-1/2 py-2 rounded-md bg-purple-600 text-white hover:bg-purple-700 transition",
-                                children: isLoading ? "Proceeding..." : "Proceed"
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/cards/SingleCoordinatorCardForm.tsx",
-                                lineNumber: 209,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/components/cards/SingleCoordinatorCardForm.tsx",
-                        lineNumber: 196,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/app/components/cards/SingleCoordinatorCardForm.tsx",
-                lineNumber: 130,
-                columnNumber: 7
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/app/components/cards/SingleCoordinatorCardForm.tsx",
-        lineNumber: 125,
-        columnNumber: 5
-    }, this);
-};
-_s(SingleCoordinatorCardForm, "qTkXBe47Pc5dCBuVef4oCihyj6c=");
-_c = SingleCoordinatorCardForm;
-const __TURBOPACK__default__export__ = SingleCoordinatorCardForm;
-var _c;
-__turbopack_context__.k.register(_c, "SingleCoordinatorCardForm");
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
-}
-}}),
-"[project]/app/components/modals/CancelBookingModal.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
-{
-__turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-"use client";
-;
-const CancelBookingModal = ({ show, onConfirm, onDismiss })=>{
-    return show && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: `fixed inset-0 flex justify-center items-center z-50 transition-opacity duration-300 ${show ? "opacity-100" : "opacity-0"}`,
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: `absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300 ${show ? "opacity-100" : "opacity-0"}`
-            }, void 0, false, {
-                fileName: "[project]/app/components/modals/CancelBookingModal.tsx",
-                lineNumber: 29,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: `relative bg-white dark:bg-gray-800 p-6 rounded-lg max-w-sm w-full space-y-4 z-50 shadow-lg mx-4 transform transition-all duration-300 ${show ? "opacity-100 scale-100" : "opacity-0 scale-90"}`,
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-lg font-semibold text-center text-gray-900 dark:text-white",
-                        children: "Are you sure you want to cancel?"
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                        className: "text-3xl font-bold mb-10 text-center dark:text-white text-gray-900",
+                        children: "Wedding Coordinators"
                     }, void 0, false, {
-                        fileName: "[project]/app/components/modals/CancelBookingModal.tsx",
-                        lineNumber: 42,
-                        columnNumber: 11
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 61,
+                        columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-col gap-4",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                className: "px-4 py-2 rounded-md bg-red-500 text-white w-full",
-                                type: "button",
-                                onClick: (e)=>{
-                                    e.preventDefault();
-                                    onConfirm();
-                                },
-                                children: "Yes, Cancel"
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/modals/CancelBookingModal.tsx",
-                                lineNumber: 49,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                className: "px-4 py-2 rounded-md bg-gray-300 dark:bg-gray-700 text-gray-900 dark:text-white w-full",
-                                type: "button",
-                                onClick: (e)=>{
-                                    e.preventDefault();
-                                    onDismiss();
-                                },
-                                children: "No, Go Back"
-                            }, void 0, false, {
-                                fileName: "[project]/app/components/modals/CancelBookingModal.tsx",
-                                lineNumber: 61,
-                                columnNumber: 13
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/components/modals/CancelBookingModal.tsx",
-                        lineNumber: 47,
-                        columnNumber: 11
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/app/components/modals/CancelBookingModal.tsx",
-                lineNumber: 36,
-                columnNumber: 9
-            }, this)
-        ]
-    }, void 0, true, {
-        fileName: "[project]/app/components/modals/CancelBookingModal.tsx",
-        lineNumber: 23,
-        columnNumber: 7
-    }, this);
-};
-_c = CancelBookingModal;
-const __TURBOPACK__default__export__ = CancelBookingModal;
-var _c;
-__turbopack_context__.k.register(_c, "CancelBookingModal");
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
-}
-}}),
-"[project]/app/components/utils/services/bookingService.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
-{
-/**
- * Service file to handle API requests related to bookings.
- *
- * This service abstracts HTTP requests for booking-related operations,
- * providing a clean, reusable API layer for creating bookings.
- */ __turbopack_context__.s({
-    "createBooking": (()=>createBooking)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
-const BASE_URL = ("TURBOPACK compile-time value", "https://weddly-backend.onrender.com");
-const createBooking = async (data)=>{
-    const response = await fetch(`${BASE_URL}/api/bookings`, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-    });
-    // Throw error if booking creation fails
-    if (!response.ok) {
-        const error = await response.json();
-        throw new Error(error.message || "Failed to create booking");
-    }
-    // Return response if successful
-    return response.json();
-};
-if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
-    __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
-}
-}}),
-"[project]/app/components/modals/ResponseBookingModal.tsx [app-client] (ecmascript)": ((__turbopack_context__) => {
-"use strict";
-
-var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
-{
-__turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-"use client";
-;
-const ResponseBookingModal = ({ show, onSuccessConfirm, onErrorConfirm })=>{
-    return show !== "" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: `fixed inset-0 flex justify-center items-center z-50 transition-opacity duration-300 ${show !== "" ? "opacity-100" : "opacity-0"}`,
-        children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: `absolute inset-0 bg-black/60 backdrop-blur-sm transition-opacity duration-300 ${show !== "" ? "opacity-100" : "opacity-0"}`
-            }, void 0, false, {
-                fileName: "[project]/app/components/modals/ResponseBookingModal.tsx",
-                lineNumber: 28,
-                columnNumber: 9
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: `relative bg-white dark:bg-gray-800 p-6 rounded-lg max-w-sm w-full space-y-4 z-50 shadow-lg mx-4 transform transition-all duration-300 ${show !== "" ? "opacity-100 scale-100" : "opacity-0 scale-90"}`,
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-lg font-semibold text-center text-gray-900 dark:text-white",
-                        children: show
-                    }, void 0, false, {
-                        fileName: "[project]/app/components/modals/ResponseBookingModal.tsx",
-                        lineNumber: 41,
-                        columnNumber: 11
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex flex-col gap-4",
-                        children: show.startsWith("You have successfully booked") ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "px-4 py-2 rounded-md bg-green-500 text-white w-full",
-                            type: "button",
-                            onClick: (e)=>{
-                                e.preventDefault();
-                                onSuccessConfirm(); // Handle success acknowledgment
-                            },
-                            children: "Done"
+                        className: "flex justify-center mb-10",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                            type: "text",
+                            placeholder: "Search by name or location...",
+                            value: searchTerm,
+                            onChange: (e)=>setSearchTerm(e.target.value),
+                            className: "w-full max-w-md px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-500 dark:bg-gray-700 dark:text-white dark:border-gray-600 dark:focus:ring-purple-00"
                         }, void 0, false, {
-                            fileName: "[project]/app/components/modals/ResponseBookingModal.tsx",
-                            lineNumber: 48,
-                            columnNumber: 15
-                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "px-4 py-2 rounded-md bg-red-500 text-white w-full",
-                            type: "button",
-                            onClick: (e)=>{
-                                e.preventDefault();
-                                onErrorConfirm(); // Handle error acknowledgment
-                            },
-                            children: "Close"
-                        }, void 0, false, {
-                            fileName: "[project]/app/components/modals/ResponseBookingModal.tsx",
-                            lineNumber: 59,
-                            columnNumber: 15
+                            fileName: "[project]/app/page.tsx",
+                            lineNumber: 67,
+                            columnNumber: 11
                         }, this)
                     }, void 0, false, {
-                        fileName: "[project]/app/components/modals/ResponseBookingModal.tsx",
-                        lineNumber: 46,
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 66,
+                        columnNumber: 9
+                    }, this),
+                    loading && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-center text-gray-600",
+                        children: "Loading coordinators..."
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 78,
                         columnNumber: 11
+                    }, this),
+                    error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-center text-red-500",
+                        children: error
+                    }, void 0, false, {
+                        fileName: "[project]/app/page.tsx",
+                        lineNumber: 82,
+                        columnNumber: 19
                     }, this)
                 ]
             }, void 0, true, {
-                fileName: "[project]/app/components/modals/ResponseBookingModal.tsx",
-                lineNumber: 35,
-                columnNumber: 9
+                fileName: "[project]/app/page.tsx",
+                lineNumber: 60,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$shared$2f$Footer$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                fileName: "[project]/app/page.tsx",
+                lineNumber: 104,
+                columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "[project]/app/components/modals/ResponseBookingModal.tsx",
-        lineNumber: 22,
-        columnNumber: 7
+        fileName: "[project]/app/page.tsx",
+        lineNumber: 55,
+        columnNumber: 5
     }, this);
-};
-_c = ResponseBookingModal;
-const __TURBOPACK__default__export__ = ResponseBookingModal;
+}
+_s(Page, "98fnS/usgwmWVQ0+WmyBf1ZzJvw=", false, function() {
+    return [
+        __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$utils$2f$hooks$2f$useTheme$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useTheme"]
+    ];
+});
+_c = Page;
 var _c;
-__turbopack_context__.k.register(_c, "ResponseBookingModal");
+__turbopack_context__.k.register(_c, "Page");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
-"[project]/app/coordinator/[id]/page.tsx [app-client] (ecmascript)": (function(__turbopack_context__) {
-
-var { g: global, __dirname, k: __turbopack_refresh__, m: module, e: exports } = __turbopack_context__;
-{
-const e = new Error(`Could not parse module '[project]/app/coordinator/[id]/page.tsx'
-
-Expected ident`);
-e.code = 'MODULE_UNPARSEABLE';
-throw e;}}),
 "[project]/node_modules/lucide-react/dist/esm/shared/src/utils.js [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -2057,12 +1213,6 @@ __turbopack_context__.s({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$twitter$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/twitter.js [app-client] (ecmascript)");
 }}),
-"[project]/node_modules/next/navigation.js [app-client] (ecmascript)": (function(__turbopack_context__) {
-
-var { g: global, __dirname, m: module, e: exports } = __turbopack_context__;
-{
-module.exports = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/navigation.js [app-client] (ecmascript)");
-}}),
 }]);
 
-//# sourceMappingURL=_b3ed3f40._.js.map
+//# sourceMappingURL=_c0f32424._.js.map

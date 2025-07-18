@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Metadata for the Next.js app (used for SEO and document head)
+// Metadata for this app (used for SEO and document head)
 export const metadata: Metadata = {
   title: "Weddly",
   description: "Weddly connects you with expert wedding coordinators for a smooth, stress-free wedding planning experience", 
@@ -28,6 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    /* Html tag tells the browser the primary language of the app is English. */
     <html lang='en'>
       {/* Body includes font CSS variables and antialiasing for smooth text */}
       <body

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /**
  * Coordinator Type Definition
  * Describes the properties associated with each coordinator.

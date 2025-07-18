@@ -51,6 +51,7 @@ export default function Page() {
         c.location.toLowerCase().includes(searchTerm.toLowerCase()))
   );
 
+
   return (
     <div className='min-h-screen bg-white dark:bg-gray-800 antialiased transition-colors duration-300'>
       {/* Navigation bar with theme toggle */}

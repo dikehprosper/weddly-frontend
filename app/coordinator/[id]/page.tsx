@@ -18,6 +18,7 @@ import ResponseBookingModal from "@/components/modals/ResponseBookingModal";
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function Page({params}: {params: any}) {
   const {id} = params;
+
   // Access theme and toggle function from custom hook
   const {theme, toggleTheme} = useTheme();
 
@@ -78,7 +79,7 @@ export default function Page({params}: {params: any}) {
   // Effect to load coordinator data on mount or id change
   useEffect(() => {
     const coordinatorData = searchParams.get("coordinator");
-
+    console.log(coordinatorData, "coordinatorData");
     if (coordinatorData) {
       // Attempt to parse coordinator data passed via URL param for faster render
       try {
