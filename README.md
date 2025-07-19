@@ -24,6 +24,16 @@ REST API
 |  **Backend (Express + MongoDB)**   | https://weddly-backend.onrender.com          |
  
 
+
+ ### Github Repo
+
+|  App                               | Link                                                |
+| ---------------------------------- | --------------------------------------------        |
+|  **Frontend (Next.js)**            | https://github.com/dikehprosper/weddly-frontend     |
+|  **Backend (Express + MongoDB)**   | https://github.com/dikehprosper/weddly-backend      |
+ 
+
+
 ## Deployment
 Frontend: Netlify
 Backend: Render
